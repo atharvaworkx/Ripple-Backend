@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database
+*.sqlite3
+db.sqlite3
+
+# Django staticfiles collected output
+staticfiles/
+media/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Editor & OS artifacts
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

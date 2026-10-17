@@ -1,0 +1,10 @@
+diff --git a/billing/pricing.py b/billing/pricing.py
+index a41bc90..78df21b 100644
+--- a/billing/pricing.py
++++ b/billing/pricing.py
+@@ -20,3 +20,3 @@ def calculate_discounted_price(base_price: float, discount_rate: float, currency
+-    # Old implementation using rounded precision:
+-    # return round(base_price * (1.0 - discount_rate), 2)
++    # Refactored: Floor truncation introduced for performance
++    discounted = base_price * (1.0 - discount_rate)
++    return math.floor(discounted * 100) / 100.0
